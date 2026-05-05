@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Construction &amp; Repair Services | Brooklyn Pro Contractors</title>
+  <meta name="description" content="Full-service construction and repair in Brooklyn, NY. Masonry, foundation repair, roofing, concrete, interior renovation, and 24/7 emergency services. Licensed &amp; insured." />
+  <meta name="keywords" content="masonry repair Brooklyn, foundation repair Brooklyn NY, roofing contractor Brooklyn, concrete sidewalk repair Brooklyn, interior renovation Brooklyn, emergency repair Brooklyn" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brooklynprocontractors.com/services.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Construction &amp; Repair Services | Brooklyn Pro Contractors" />
+  <meta property="og:description" content="Full-service construction and repair in Brooklyn. Masonry, foundations, roofing, concrete, renovation, and emergency services." />
+  <meta property="og:url" content="https://www.brooklynprocontractors.com/services.html" />
+
+  <!-- Structured Data: Service List -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Construction & Repair Services in Brooklyn",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Masonry & Brickwork","url":"https://www.brooklynprocontractors.com/services.html#masonry"},
+      {"@type":"ListItem","position":2,"name":"Foundation Repair","url":"https://www.brooklynprocontractors.com/services.html#foundation"},
+      {"@type":"ListItem","position":3,"name":"Roofing & Waterproofing","url":"https://www.brooklynprocontractors.com/services.html#roofing"},
+      {"@type":"ListItem","position":4,"name":"Interior Renovation","url":"https://www.brooklynprocontractors.com/services.html#renovation"},
+      {"@type":"ListItem","position":5,"name":"Concrete Repair","url":"https://www.brooklynprocontractors.com/services.html#concrete"},
+      {"@type":"ListItem","position":6,"name":"Emergency Repair","url":"https://www.brooklynprocontractors.com/services.html#emergency"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 72px 0;
+      border-bottom: 1px solid #E8E8E8;
+    }
+    .service-detail:last-child { border-bottom: none; }
+    .service-detail--reverse .service-detail__content { order: 2; }
+    .service-detail--reverse .service-detail__visual { order: 1; }
+    .service-detail__tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,166,35,0.12);
+      color: var(--yellow-dark);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+    }
+    .service-detail__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 900;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .service-detail__desc {
+      font-size: 1rem;
+      color: var(--gray-mid);
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+    .service-detail__checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .service-detail__check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--gray-dark);
+    }
+    .service-detail__check-icon {
+      color: var(--yellow-dark);
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .service-detail__visual {
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+    }
+    .service-detail__image {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 5rem;
+      color: rgba(255,255,255,0.25);
+    }
+    .service-detail__image span:last-child {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+    @media (max-width: 900px) {
+      .service-detail {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .service-detail--reverse .service-detail__content { order: 1; }
+      .service-detail--reverse .service-detail__visual { order: 2; }
+    }
+    .faq { max-width: 800px; margin: 0 auto; }
+    .faq__item {
+      border: 1px solid #E0E0E0;
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq__question {
+      width: 100%;
+      background: var(--white);
+      border: none;
+      padding: 18px 24px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: background var(--transition);
+    }
+    .faq__question:hover { background: var(--gray-light); }
+    .faq__question[aria-expanded="true"] { background: var(--navy); color: var(--white); }
+    .faq__chevron { transition: transform var(--transition); flex-shrink: 0; }
+    .faq__question[aria-expanded="true"] .faq__chevron { transform: rotate(180deg); }
+    .faq__answer {
+      display: none;
+      padding: 16px 24px 20px;
+      font-size: 0.95rem;
+      color: var(--gray-mid);
+      line-height: 1.7;
+      background: var(--gray-light);
+    }
+    .faq__answer.open { display: block; }
+  </style>
+</head>
+<body>
+
+  <div class="emergency-banner" role="alert">
+    🚨 24/7 Emergency Repair Service — Call Now: <a href="tel:+17185550192">(718) 555-0192</a>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__inner">
+        <div class="topbar__items">
+          <div class="topbar__item"><span>📞</span><a href="tel:+17185550192">(718) 555-0192</a></div>
+          <div class="topbar__item"><span>✉️</span><a href="mailto:info@brooklynprocontractors.com">info@brooklynprocontractors.com</a></div>
+        </div>
+        <div class="topbar__items">
+          <div class="topbar__item"><span>⭐ 4.9/5 — 318 Reviews</span></div>
+          <div class="topbar__item"><span>🪪 Licensed &amp; Insured</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="Brooklyn Pro Contractors Home">
+          <div class="navbar__logo-icon" aria-hidden="true">🏗️</div>
+          Brooklyn <span>Pro</span> Contractors
+        </a>
+        <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="navbar__menu" role="navigation" aria-label="Main navigation">
+          <ul class="navbar__nav">
+            <li><a href="index.html" class="navbar__link">Home</a></li>
+            <li><a href="services.html" class="navbar__link active" aria-current="page">Services</a></li>
+            <li><a href="about.html" class="navbar__link">About Us</a></li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+          </ul>
+          <div class="navbar__cta">
+            <a href="contact.html" class="btn btn--primary">Free Estimate</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <nav class="page-header__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span aria-hidden="true">›</span> <span>Services</span>
+        </nav>
+        <h1 class="page-header__title">Construction &amp; Repair Services</h1>
+        <p class="page-header__subtitle">Expert construction, restoration, and repair for Brooklyn homes and buildings. Every job backed by our 20-year workmanship warranty.</p>
+      </div>
+    </div>
+
+    <!-- Services Navigation -->
+    <div style="background:var(--gray-light);border-bottom:1px solid #E0E0E0;padding:16px 0;position:sticky;top:68px;z-index:100;">
+      <div class="container">
+        <nav aria-label="Services navigation" style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="#masonry" style="padding:8px 16px;background:var(--white);border-radius:99px;font-size:0.85rem;font-weight:600;color:var(--navy);border:1px solid #DDD;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--yellow)'" onmouseout="this.style.background='var(--white)'">🧱 Masonry</a>
+          <a href="#foundation" style="padding:8px 16px;background:var(--white);border-radius:99px;font-size:0.85rem;font-weight:600;color:var(--navy);border:1px solid #DDD;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--yellow)'" onmouseout="this.style.background='var(--white)'">🏚️ Foundation</a>
+          <a href="#roofing" style="padding:8px 16px;background:var(--white);border-radius:99px;font-size:0.85rem;font-weight:600;color:var(--navy);border:1px solid #DDD;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--yellow)'" onmouseout="this.style.background='var(--white)'">🏠 Roofing</a>
+          <a href="#renovation" style="padding:8px 16px;background:var(--white);border-radius:99px;font-size:0.85rem;font-weight:600;color:var(--navy);border:1px solid #DDD;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--yellow)'" onmouseout="this.style.background='var(--white)'">🪟 Renovation</a>
+          <a href="#concrete" style="padding:8px 16px;background:var(--white);border-radius:99px;font-size:0.85rem;font-weight:600;color:var(--navy);border:1px solid #DDD;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--yellow)'" onmouseout="this.style.background='var(--white)'">🧱 Concrete</a>
+          <a href="#emergency" style="padding:8px 16px;background:var(--red);color:white;border-radius:99px;font-size:0.85rem;font-weight:700;border:1px solid var(--red);text-decoration:none;">🚨 Emergency</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="services-detail-heading">
+      <div class="container">
+        <h2 id="services-detail-heading" class="sr-only">Detailed Service Descriptions</h2>
+
+        <!-- Masonry -->
+        <div class="service-detail" id="masonry">
+          <div class="service-detail__content">
+            <div class="service-detail__tag"><span aria-hidden="true">🧱</span> Masonry &amp; Brickwork</div>
+            <h2 class="service-detail__title">Expert Masonry &amp; Brickwork in Brooklyn</h2>
+            <p class="service-detail__desc">Brooklyn's iconic brownstones and brick buildings require specialized care. Our masons are trained in traditional techniques and modern materials, preserving the character of your building while ensuring structural integrity.</p>
+            <ul class="service-detail__checklist" aria-label="Masonry services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Tuckpointing and repointing mortar joints</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Brick replacement and matching</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Brownstone facade restoration</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Lintel and arch repair</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Parapet wall repair and rebuilding</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Chimney repair and rebuilding</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>New masonry construction</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Free Masonry Estimate</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#8B4513 0%,#A0522D 100%);" role="img" aria-label="Masonry brickwork repair">
+              <span>🧱</span><span>Masonry &amp; Brickwork</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foundation -->
+        <div class="service-detail service-detail--reverse" id="foundation">
+          <div class="service-detail__content">
+            <div class="service-detail__tag"><span aria-hidden="true">🏚️</span> Foundation Repair</div>
+            <h2 class="service-detail__title">Foundation Repair &amp; Waterproofing in Brooklyn</h2>
+            <p class="service-detail__desc">Foundation problems left untreated can compromise your entire building. We diagnose root causes — soil settlement, water intrusion, or structural movement — and apply lasting repairs that keep your foundation solid for decades.</p>
+            <ul class="service-detail__checklist" aria-label="Foundation services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Crack injection and sealing (epoxy &amp; polyurethane)</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Interior and exterior waterproofing</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Underpinning and foundation stabilization</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>French drain and sump pump installation</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Basement wall repair and reinforcement</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Crawl space encapsulation</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Free Foundation Assessment</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#2C3E50 0%,#3D5166 100%);" role="img" aria-label="Foundation repair work">
+              <span>🏚️</span><span>Foundation Repair</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Roofing -->
+        <div class="service-detail" id="roofing">
+          <div class="service-detail__content">
+            <div class="service-detail__tag"><span aria-hidden="true">🏠</span> Roofing &amp; Waterproofing</div>
+            <h2 class="service-detail__title">Roofing &amp; Waterproofing Services in Brooklyn</h2>
+            <p class="service-detail__desc">Brooklyn's flat roofs take a beating from rain, snow, and UV exposure. We install and repair all flat roof systems using premium materials, and we investigate and permanently fix leaks — not just patch them temporarily.</p>
+            <ul class="service-detail__checklist" aria-label="Roofing services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Flat roof installation and replacement (TPO, EPDM, Modified Bitumen)</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Roof leak detection and repair</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Roof deck repair and replacement</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Parapet wall flashing and coping</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Skylight installation and repair</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Below-grade waterproofing</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Annual roof maintenance programs</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Free Roofing Estimate</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#1A2340 0%,#243050 100%);" role="img" aria-label="Roofing work on Brooklyn building">
+              <span>🏠</span><span>Roofing &amp; Waterproofing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Renovation -->
+        <div class="service-detail service-detail--reverse" id="renovation">
+          <div class="service-detail__content">
+            <div class="service-detail__tag"><span aria-hidden="true">🪟</span> Interior Renovation</div>
+            <h2 class="service-detail__title">Interior Renovation &amp; Remodeling in Brooklyn</h2>
+            <p class="service-detail__desc">Transform your Brooklyn space from top to bottom. Whether you're gutting a brownstone apartment, remodeling a kitchen, or converting a basement, our design-build approach handles everything under one roof.</p>
+            <ul class="service-detail__checklist" aria-label="Renovation services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Full gut renovations and apartment buildouts</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Kitchen remodeling (cabinets, counters, plumbing)</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Bathroom renovations and tile work</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Framing, drywall, and plastering</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Hardwood flooring installation and refinishing</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Basement finishing and conversion</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>NYC DOB permit filing and compliance</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Free Renovation Estimate</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#5D4037 0%,#795548 100%);" role="img" aria-label="Brooklyn interior renovation">
+              <span>🪟</span><span>Interior Renovation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Concrete -->
+        <div class="service-detail" id="concrete">
+          <div class="service-detail__content">
+            <div class="service-detail__tag"><span aria-hidden="true">🛠️</span> Concrete Work</div>
+            <h2 class="service-detail__title">Concrete Repair &amp; Installation in Brooklyn</h2>
+            <p class="service-detail__desc">NYC sidewalk violations, crumbling stoops, damaged driveways — we handle all concrete work to NYC Department of Transportation standards. We resolve open violations so you avoid fines and liability.</p>
+            <ul class="service-detail__checklist" aria-label="Concrete services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>NYC DOT sidewalk violation repair and sign-off</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Stoop repair and replacement</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Driveway installation and repair</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Retaining wall construction</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Patio and courtyard paving</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Concrete crack repair and sealing</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Get a Free Concrete Estimate</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#546E7A 0%,#78909C 100%);" role="img" aria-label="Concrete repair work">
+              <span>🛠️</span><span>Concrete &amp; Sidewalk Repair</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emergency -->
+        <div class="service-detail service-detail--reverse" id="emergency">
+          <div class="service-detail__content">
+            <div class="service-detail__tag" style="background:rgba(192,57,43,0.1);color:var(--red);"><span aria-hidden="true">🚨</span> Emergency Repair</div>
+            <h2 class="service-detail__title">24/7 Emergency Construction Repair in Brooklyn</h2>
+            <p class="service-detail__desc">When disaster strikes, every minute counts. We maintain a dedicated emergency response crew that deploys around the clock to contain damage, make emergency repairs, and secure your property from further harm.</p>
+            <ul class="service-detail__checklist" aria-label="Emergency services included">
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Storm and wind damage response</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Partial collapse and structural shoring</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Water intrusion and flood response</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Fire damage assessment and board-up</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>NYC DOB emergency violation compliance</span></li>
+              <li class="service-detail__check-item"><span class="service-detail__check-icon" aria-hidden="true">✓</span><span>Insurance company liaison support</span></li>
+            </ul>
+            <a href="tel:+17185550192" class="btn" style="background:var(--red);color:white;border-color:var(--red);">🚨 Call Emergency Line Now</a>
+          </div>
+          <div class="service-detail__visual">
+            <div class="service-detail__image" style="background:linear-gradient(135deg,#7B241C 0%,#C0392B 100%);" role="img" aria-label="Emergency repair response">
+              <span>🚨</span><span>24/7 Emergency Response</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--gray" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="text-center">
+          <span class="section__tag">FAQ</span>
+          <h2 class="section__title" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section__subtitle">Common questions from Brooklyn homeowners and property managers.</p>
+        </div>
+        <div class="faq">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq1">
+              Do you handle NYC Department of Buildings permits?
+              <span class="faq__chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq__answer" id="faq1" role="region">
+              Yes. We handle all required NYC DOB permit filings, engineering drawings (where needed), inspections, and final sign-offs. You never have to navigate the permit process yourself.
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq2">
+              How quickly can you respond to an emergency?
+              <span class="faq__chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq__answer" id="faq2" role="region">
+              Our emergency crew is on call 24/7. For critical structural emergencies, we typically arrive within 1–3 hours anywhere in Brooklyn. Call (718) 555-0192 any time, day or night.
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq3">
+              What does your 20-year warranty cover?
+              <span class="faq__chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq__answer" id="faq3" role="region">
+              Our 20-year workmanship warranty covers defects in labor and installation on all structural and waterproofing work. Material warranties vary by manufacturer and are passed directly to you. Details are always spelled out in your written contract before work begins.
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq4">
+              Do you work with insurance claims?
+              <span class="faq__chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq__answer" id="faq4" role="region">
+              Yes. We work with all major insurance carriers and can provide detailed damage assessments and documentation to support your claim. We can also communicate directly with your adjuster to ensure nothing is missed.
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false" aria-controls="faq5">
+              How are estimates priced?
+              <span class="faq__chevron" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq__answer" id="faq5" role="region">
+              All estimates are free, written, and itemized — no vague lump sums. We provide a detailed breakdown of labor, materials, permits, and timeline so you always know exactly what you're paying for before signing anything.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-strip" role="complementary">
+      <div class="container">
+        <div class="cta-strip__inner">
+          <h2 class="cta-strip__title">Not Sure Which Service You Need? Let's Talk.</h2>
+          <div class="cta-strip__actions">
+            <a href="contact.html" class="btn btn--navy">Request Free Estimate</a>
+            <a href="tel:+17185550192" class="btn btn--outline" style="border-color:var(--navy);color:var(--navy);">📞 (718) 555-0192</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="navbar__logo" aria-label="Brooklyn Pro Contractors">
+            <div class="navbar__logo-icon" aria-hidden="true">🏗️</div>
+            Brooklyn <span>Pro</span> Contractors
+          </a>
+          <p class="footer__brand-desc">Brooklyn's trusted construction and repair specialists since 2005.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Services</h3>
+          <ul class="footer__links">
+            <li><a href="#masonry" class="footer__link">Masonry &amp; Brickwork</a></li>
+            <li><a href="#foundation" class="footer__link">Foundation Repair</a></li>
+            <li><a href="#roofing" class="footer__link">Roofing &amp; Waterproofing</a></li>
+            <li><a href="#renovation" class="footer__link">Interior Renovation</a></li>
+            <li><a href="#concrete" class="footer__link">Concrete Work</a></li>
+            <li><a href="#emergency" class="footer__link">Emergency Repair</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="index.html#reviews" class="footer__link">Reviews</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Contact</h3>
+          <ul class="footer__contact-items">
+            <li class="footer__contact-item"><span class="footer__contact-icon" aria-hidden="true">📞</span><div><strong>Phone</strong><a href="tel:+17185550192">(718) 555-0192</a></div></li>
+            <li class="footer__contact-item"><span class="footer__contact-icon" aria-hidden="true">📍</span><div><strong>Address</strong>1420 Atlantic Ave, Brooklyn, NY 11216</div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Brooklyn Pro Contractors. All rights reserved. | NYC License #1234567</p>
+        <nav class="footer__bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
