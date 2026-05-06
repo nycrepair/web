@@ -31,8 +31,7 @@
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": "Brooklyn Pro Contractors",
-    "image": "https://www.brooklynprocontractors.com/images/og-image.jpg",
-    "description": "Full-service construction and repair company serving all Brooklyn neighborhoods. Specializing in masonry, concrete repair, roofing, foundations, and renovations.",
+    "description": "Full-service construction and repair company serving all Brooklyn neighborhoods.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1420 Atlantic Ave",
@@ -41,37 +40,11 @@
       "postalCode": "11216",
       "addressCountry": "US"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 40.6782,
-      "longitude": -73.9442
-    },
     "url": "https://www.brooklynprocontractors.com",
     "telephone": "+1-718-555-0192",
     "email": "info@brooklynprocontractors.com",
     "priceRange": "$$",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "07:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "16:00"
-      }
-    ],
-    "areaServed": [
-      "Brooklyn", "Park Slope", "Williamsburg", "DUMBO", "Bay Ridge",
-      "Crown Heights", "Bushwick", "Flatbush", "Sunset Park", "Bed-Stuy"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/brooklynprocontractors",
-      "https://www.instagram.com/brooklynprocontractors"
-    ],
+    "areaServed": ["Brooklyn", "Park Slope", "Williamsburg", "DUMBO", "Bay Ridge", "Crown Heights", "Bushwick", "Flatbush", "Sunset Park", "Bed-Stuy"],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -80,52 +53,30 @@
   }
   </script>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <!-- Emergency Banner -->
   <div class="emergency-banner" role="alert">
     🚨 24/7 Emergency Repair Service Available — Call Now: <a href="tel:+17185550192">(718) 555-0192</a>
   </div>
-
-  <!-- Top Bar -->
   <div class="topbar">
     <div class="container">
       <div class="topbar__inner">
         <div class="topbar__items">
-          <div class="topbar__item">
-            <span>📞</span>
-            <a href="tel:+17185550192">(718) 555-0192</a>
-          </div>
-          <div class="topbar__item">
-            <span>✉️</span>
-            <a href="mailto:info@brooklynprocontractors.com">info@brooklynprocontractors.com</a>
-          </div>
-          <div class="topbar__item">
-            <span>📍</span>
-            <span>1420 Atlantic Ave, Brooklyn, NY 11216</span>
-          </div>
+          <div class="topbar__item"><span>📞</span><a href="tel:+17185550192">(718) 555-0192</a></div>
+          <div class="topbar__item"><span>✉️</span><a href="mailto:info@brooklynprocontractors.com">info@brooklynprocontractors.com</a></div>
+          <div class="topbar__item"><span>📍</span><span>1420 Atlantic Ave, Brooklyn, NY 11216</span></div>
         </div>
         <div class="topbar__items">
-          <div class="topbar__item">
-            <span>⭐ 4.9/5</span>
-            <span>— 318 Reviews</span>
-          </div>
-          <div class="topbar__item">
-            <span>🪪 Licensed &amp; Insured</span>
-          </div>
+          <div class="topbar__item"><span>⭐ 4.9/5 — 318 Reviews</span></div>
+          <div class="topbar__item"><span>🪪 Licensed &amp; Insured</span></div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Navbar -->
   <header class="navbar" role="banner">
     <div class="container">
       <div class="navbar__inner">
@@ -133,11 +84,9 @@
           <div class="navbar__logo-icon" aria-hidden="true">🏗️</div>
           Brooklyn <span>Pro</span> Contractors
         </a>
-
         <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
           <span></span><span></span><span></span>
         </button>
-
         <nav id="navMenu" class="navbar__menu" role="navigation" aria-label="Main navigation">
           <ul class="navbar__nav">
             <li><a href="index.html" class="navbar__link active" aria-current="page">Home</a></li>
@@ -145,127 +94,58 @@
             <li><a href="about.html" class="navbar__link">About Us</a></li>
             <li><a href="contact.html" class="navbar__link">Contact</a></li>
           </ul>
-          <div class="navbar__cta">
-            <a href="contact.html" class="btn btn--primary">Free Estimate</a>
-          </div>
+          <div class="navbar__cta"><a href="contact.html" class="btn btn--primary">Free Estimate</a></div>
         </nav>
       </div>
     </div>
   </header>
-
   <main>
-    <!-- Hero Section -->
     <section class="hero" aria-label="Hero">
       <div class="container">
         <div class="hero__grid">
           <div class="hero__content">
-            <div class="hero__badge">
-              <span>⭐</span>
-              Brooklyn's #1 Rated Contractor — Est. 2005
-            </div>
-            <h1 class="hero__title">
-              Brooklyn's Trusted<br>
-              <em>Construction &amp;</em><br>
-              <em>Repair Experts</em>
-            </h1>
-            <p class="hero__subtitle">
-              From masonry and foundations to full renovations — we deliver quality craftsmanship to every Brooklyn neighborhood. Licensed, insured, and ready to handle any project.
-            </p>
+            <div class="hero__badge"><span>⭐</span> Brooklyn's #1 Rated Contractor — Est. 2005</div>
+            <h1 class="hero__title">Brooklyn's Trusted<br><em>Construction &amp;</em><br><em>Repair Experts</em></h1>
+            <p class="hero__subtitle">From masonry and foundations to full renovations — we deliver quality craftsmanship to every Brooklyn neighborhood. Licensed, insured, and ready to handle any project.</p>
             <div class="hero__actions">
               <a href="contact.html" class="btn btn--primary">Get a Free Estimate →</a>
               <a href="tel:+17185550192" class="btn btn--outline">📞 (718) 555-0192</a>
             </div>
             <div class="hero__stats">
-              <div class="hero__stat">
-                <span class="hero__stat-num">18+</span>
-                <span class="hero__stat-label">Years in Brooklyn</span>
-              </div>
-              <div class="hero__stat">
-                <span class="hero__stat-num">2,400+</span>
-                <span class="hero__stat-label">Projects Completed</span>
-              </div>
-              <div class="hero__stat">
-                <span class="hero__stat-num">4.9★</span>
-                <span class="hero__stat-label">Average Rating</span>
-              </div>
+              <div class="hero__stat"><span class="hero__stat-num">18+</span><span class="hero__stat-label">Years in Brooklyn</span></div>
+              <div class="hero__stat"><span class="hero__stat-num">2,400+</span><span class="hero__stat-label">Projects Completed</span></div>
+              <div class="hero__stat"><span class="hero__stat-num">4.9★</span><span class="hero__stat-label">Average Rating</span></div>
             </div>
           </div>
-
           <div class="hero__visual">
             <div class="hero__card-stack">
               <div class="hero__main-card">
                 <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;font-weight:700;">Our Core Services</p>
                 <ul class="hero__service-list" aria-label="Core services">
-                  <li class="hero__service-item">
-                    <div class="hero__service-icon" aria-hidden="true">🧱</div>
-                    <div class="hero__service-text">
-                      <strong>Masonry &amp; Brickwork</strong>
-                      <span>Pointing, restoration, new construction</span>
-                    </div>
-                  </li>
-                  <li class="hero__service-item">
-                    <div class="hero__service-icon" aria-hidden="true">🏚️</div>
-                    <div class="hero__service-text">
-                      <strong>Foundation Repair</strong>
-                      <span>Crack repair, waterproofing, stabilization</span>
-                    </div>
-                  </li>
-                  <li class="hero__service-item">
-                    <div class="hero__service-icon" aria-hidden="true">🏠</div>
-                    <div class="hero__service-text">
-                      <strong>Roofing &amp; Waterproofing</strong>
-                      <span>Flat roofs, repairs, full replacements</span>
-                    </div>
-                  </li>
-                  <li class="hero__service-item">
-                    <div class="hero__service-icon" aria-hidden="true">🪟</div>
-                    <div class="hero__service-text">
-                      <strong>Interior Renovation</strong>
-                      <span>Kitchens, baths, full gut renovations</span>
-                    </div>
-                  </li>
+                  <li class="hero__service-item"><div class="hero__service-icon" aria-hidden="true">🧱</div><div class="hero__service-text"><strong>Masonry &amp; Brickwork</strong><span>Pointing, restoration, new construction</span></div></li>
+                  <li class="hero__service-item"><div class="hero__service-icon" aria-hidden="true">🏚️</div><div class="hero__service-text"><strong>Foundation Repair</strong><span>Crack repair, waterproofing, stabilization</span></div></li>
+                  <li class="hero__service-item"><div class="hero__service-icon" aria-hidden="true">🏠</div><div class="hero__service-text"><strong>Roofing &amp; Waterproofing</strong><span>Flat roofs, repairs, full replacements</span></div></li>
+                  <li class="hero__service-item"><div class="hero__service-icon" aria-hidden="true">🪟</div><div class="hero__service-text"><strong>Interior Renovation</strong><span>Kitchens, baths, full gut renovations</span></div></li>
                 </ul>
                 <a href="services.html" class="btn btn--primary" style="width:100%;justify-content:center;">View All Services</a>
               </div>
-              <div class="hero__badge-float" aria-label="20 year guarantee">
-                <strong>20yr</strong>
-                Guarantee
-              </div>
+              <div class="hero__badge-float" aria-label="20 year guarantee"><strong>20yr</strong> Guarantee</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Trust Bar -->
     <div class="trust-bar" role="complementary" aria-label="Trust indicators">
       <div class="container">
         <ul class="trust-bar__items">
-          <li class="trust-bar__item">
-            <span class="trust-bar__item-icon" aria-hidden="true">🪪</span>
-            <span>NYC Licensed &amp; Insured</span>
-          </li>
-          <li class="trust-bar__item">
-            <span class="trust-bar__item-icon" aria-hidden="true">⚡</span>
-            <span>Same-Day Emergency Response</span>
-          </li>
-          <li class="trust-bar__item">
-            <span class="trust-bar__item-icon" aria-hidden="true">💰</span>
-            <span>Free Written Estimates</span>
-          </li>
-          <li class="trust-bar__item">
-            <span class="trust-bar__item-icon" aria-hidden="true">🏆</span>
-            <span>20-Year Workmanship Warranty</span>
-          </li>
-          <li class="trust-bar__item">
-            <span class="trust-bar__item-icon" aria-hidden="true">🤝</span>
-            <span>No Sub-Contractors</span>
-          </li>
+          <li class="trust-bar__item"><span class="trust-bar__item-icon" aria-hidden="true">🪪</span><span>NYC Licensed &amp; Insured</span></li>
+          <li class="trust-bar__item"><span class="trust-bar__item-icon" aria-hidden="true">⚡</span><span>Same-Day Emergency Response</span></li>
+          <li class="trust-bar__item"><span class="trust-bar__item-icon" aria-hidden="true">💰</span><span>Free Written Estimates</span></li>
+          <li class="trust-bar__item"><span class="trust-bar__item-icon" aria-hidden="true">🏆</span><span>20-Year Workmanship Warranty</span></li>
+          <li class="trust-bar__item"><span class="trust-bar__item-icon" aria-hidden="true">🤝</span><span>No Sub-Contractors</span></li>
         </ul>
       </div>
     </div>
-
-    <!-- Services Section -->
     <section class="section" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="text-center">
@@ -274,185 +154,30 @@
           <p class="section__subtitle">From emergency repairs to complete renovations, we handle every aspect of construction with the quality your Brooklyn property deserves.</p>
         </div>
         <div class="services-grid">
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🧱</div>
-            <h3 class="service-card__title">Masonry &amp; Brickwork</h3>
-            <p class="service-card__desc">Expert tuckpointing, brick replacement, and facade restoration. We preserve Brooklyn's iconic brownstones and brick buildings using traditional techniques and quality materials.</p>
-            <a href="services.html#masonry" class="service-card__link">Learn more →</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🏚️</div>
-            <h3 class="service-card__title">Foundation Repair</h3>
-            <p class="service-card__desc">Cracks, settling, water infiltration — we diagnose and fix foundation issues before they become major structural problems. Waterproofing and drainage solutions included.</p>
-            <a href="services.html#foundation" class="service-card__link">Learn more →</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🏠</div>
-            <h3 class="service-card__title">Roofing &amp; Waterproofing</h3>
-            <p class="service-card__desc">Flat roof repairs, TPO membranes, roof replacement, and leak investigation. We protect Brooklyn homes from water damage with durable, long-lasting solutions.</p>
-            <a href="services.html#roofing" class="service-card__link">Learn more →</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🪟</div>
-            <h3 class="service-card__title">Interior Renovation</h3>
-            <p class="service-card__desc">Full gut renovations, kitchen and bathroom remodels, framing, drywall, flooring and finishing. Transform your space with expert craftsmanship from start to finish.</p>
-            <a href="services.html#renovation" class="service-card__link">Learn more →</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🧱</div>
-            <h3 class="service-card__title">Concrete Repair &amp; Pouring</h3>
-            <p class="service-card__desc">Sidewalk violations, stoops, driveways, patios, retaining walls. We handle NYC DOT sidewalk repair and all concrete work to code with expert precision.</p>
-            <a href="services.html#concrete" class="service-card__link">Learn more →</a>
-          </article>
-          <article class="service-card">
-            <div class="service-card__icon" aria-hidden="true">🚨</div>
-            <h3 class="service-card__title">Emergency Repair</h3>
-            <p class="service-card__desc">24/7 response for storm damage, collapses, water intrusion, and structural emergencies. We're on call around the clock to protect your Brooklyn property.</p>
-            <a href="services.html#emergency" class="service-card__link">Learn more →</a>
-          </article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🧱</div><h3 class="service-card__title">Masonry &amp; Brickwork</h3><p class="service-card__desc">Expert tuckpointing, brick replacement, and facade restoration. We preserve Brooklyn's iconic brownstones and brick buildings.</p><a href="services.html#masonry" class="service-card__link">Learn more →</a></article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🏚️</div><h3 class="service-card__title">Foundation Repair</h3><p class="service-card__desc">Cracks, settling, water infiltration — we diagnose and fix foundation issues before they become major structural problems.</p><a href="services.html#foundation" class="service-card__link">Learn more →</a></article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🏠</div><h3 class="service-card__title">Roofing &amp; Waterproofing</h3><p class="service-card__desc">Flat roof repairs, TPO membranes, roof replacement, and leak investigation. We protect Brooklyn homes from water damage.</p><a href="services.html#roofing" class="service-card__link">Learn more →</a></article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🪟</div><h3 class="service-card__title">Interior Renovation</h3><p class="service-card__desc">Full gut renovations, kitchen and bathroom remodels, framing, drywall, flooring and finishing.</p><a href="services.html#renovation" class="service-card__link">Learn more →</a></article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🧱</div><h3 class="service-card__title">Concrete Repair &amp; Pouring</h3><p class="service-card__desc">Sidewalk violations, stoops, driveways, patios, retaining walls. NYC DOT sidewalk repair handled to code.</p><a href="services.html#concrete" class="service-card__link">Learn more →</a></article>
+          <article class="service-card"><div class="service-card__icon" aria-hidden="true">🚨</div><h3 class="service-card__title">Emergency Repair</h3><p class="service-card__desc">24/7 response for storm damage, collapses, water intrusion, and structural emergencies.</p><a href="services.html#emergency" class="service-card__link">Learn more →</a></article>
         </div>
-        <div class="text-center mt-32">
-          <a href="services.html" class="btn btn--navy">View All Services</a>
-        </div>
+        <div class="text-center mt-32"><a href="services.html" class="btn btn--navy">View All Services</a></div>
       </div>
     </section>
-
-    <!-- Why Choose Us -->
-    <section class="section section--gray" id="why-us" aria-labelledby="why-heading">
-      <div class="container">
-        <div class="why-grid">
-          <div>
-            <span class="section__tag">Why Brooklyn Chooses Us</span>
-            <h2 class="section__title" id="why-heading">Local Expertise.<br>Exceptional Quality.</h2>
-            <p class="section__subtitle mb-0">We're Brooklynites building for Brooklynites. We know the architecture, the regulations, and the neighborhoods — and we take pride in every project.</p>
-            <div class="why__features mt-32">
-              <div class="why__feature">
-                <div class="why__feature-icon" aria-hidden="true">🪪</div>
-                <div>
-                  <h3 class="why__feature-title">Fully Licensed &amp; Insured in NYC</h3>
-                  <p class="why__feature-desc">We hold all required NYC contractor licenses and carry full general liability and workers' compensation insurance on every job.</p>
-                </div>
-              </div>
-              <div class="why__feature">
-                <div class="why__feature-icon" aria-hidden="true">🏆</div>
-                <div>
-                  <h3 class="why__feature-title">20-Year Workmanship Warranty</h3>
-                  <p class="why__feature-desc">We stand behind our work. Every completed project comes with a comprehensive warranty — not just a handshake promise.</p>
-                </div>
-              </div>
-              <div class="why__feature">
-                <div class="why__feature-icon" aria-hidden="true">👷</div>
-                <div>
-                  <h3 class="why__feature-title">Our Own Crew — No Subs</h3>
-                  <p class="why__feature-desc">We never hand off your project. Our in-house team handles every phase, ensuring consistent quality from day one to completion.</p>
-                </div>
-              </div>
-              <div class="why__feature">
-                <div class="why__feature-icon" aria-hidden="true">📋</div>
-                <div>
-                  <h3 class="why__feature-title">Transparent Pricing &amp; Permits</h3>
-                  <p class="why__feature-desc">Detailed written estimates. We pull all required NYC DOB permits and handle inspections — no surprise costs or violations left behind.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="why__image-panel">
-            <div class="why__image-placeholder" role="img" aria-label="Construction workers on a Brooklyn job site">
-              <span>🏗️</span>
-              <span style="font-size:1rem;font-weight:700;letter-spacing:0.05em;">Brooklyn Job Site</span>
-            </div>
-            <div class="why__certifications" aria-label="Certifications">
-              <span class="why__cert-badge">NYC DOB Licensed</span>
-              <span class="why__cert-badge">OSHA Certified</span>
-              <span class="why__cert-badge">EPA Lead-Safe</span>
-              <span class="why__cert-badge">BBB Accredited</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="section" id="process" aria-labelledby="process-heading">
-      <div class="container">
-        <div class="text-center">
-          <span class="section__tag">How It Works</span>
-          <h2 class="section__title" id="process-heading">Simple, Transparent Process</h2>
-          <p class="section__subtitle">Getting your Brooklyn property repaired or renovated is straightforward with our proven 4-step approach.</p>
-        </div>
-        <div class="process-steps">
-          <div class="process-step">
-            <div class="process-step__number" aria-hidden="true">1</div>
-            <h3 class="process-step__title">Free On-Site Estimate</h3>
-            <p class="process-step__desc">We visit your property, assess the scope, and provide a detailed written estimate — no obligation, no hidden fees.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step__number" aria-hidden="true">2</div>
-            <h3 class="process-step__title">Project Planning &amp; Permits</h3>
-            <p class="process-step__desc">We handle all NYC DOB permits, engineering drawings, and scheduling so you don't have to navigate the paperwork.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step__number" aria-hidden="true">3</div>
-            <h3 class="process-step__title">Expert Construction</h3>
-            <p class="process-step__desc">Our in-house crew executes the work on schedule. We keep your property clean and update you at every milestone.</p>
-          </div>
-          <div class="process-step">
-            <div class="process-step__number" aria-hidden="true">4</div>
-            <h3 class="process-step__title">Final Walkthrough &amp; Warranty</h3>
-            <p class="process-step__desc">We do a thorough final inspection together, address any punch-list items, and hand you your 20-year warranty certificate.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
     <section class="section section--navy" id="reviews" aria-labelledby="reviews-heading">
       <div class="container">
         <div class="text-center">
           <span class="section__tag">Client Reviews</span>
           <h2 class="section__title" id="reviews-heading">What Brooklyn Homeowners Say</h2>
-          <p class="section__subtitle">Rated 4.9 stars across 318 reviews — here's what our neighbors have to say.</p>
+          <p class="section__subtitle">Rated 4.9 stars across 318 reviews.</p>
         </div>
         <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div>
-            <p class="testimonial-card__text">"Brooklyn Pro fixed a serious foundation crack in our Park Slope brownstone. They explained everything clearly, pulled all the permits, and the work is flawless. Worth every penny."</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
-              <div>
-                <div class="testimonial-card__name">Marcus R.</div>
-                <div class="testimonial-card__location">Park Slope, Brooklyn</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div>
-            <p class="testimonial-card__text">"We had severe water damage after a storm. They responded within hours, contained the damage, and completed the full repair in under a week. Incredible team."</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">DT</div>
-              <div>
-                <div class="testimonial-card__name">Diana T.</div>
-                <div class="testimonial-card__location">Bay Ridge, Brooklyn</div>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div>
-            <p class="testimonial-card__text">"Got three estimates for our roof replacement. Brooklyn Pro was the most detailed and competitive. The crew was professional, on-time, and the flat roof looks perfect."</p>
-            <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">JL</div>
-              <div>
-                <div class="testimonial-card__name">James L.</div>
-                <div class="testimonial-card__location">Williamsburg, Brooklyn</div>
-              </div>
-            </div>
-          </article>
+          <article class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div><p class="testimonial-card__text">"Brooklyn Pro fixed a serious foundation crack in our Park Slope brownstone. They explained everything clearly, pulled all the permits, and the work is flawless."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar" aria-hidden="true">MR</div><div><div class="testimonial-card__name">Marcus R.</div><div class="testimonial-card__location">Park Slope, Brooklyn</div></div></div></article>
+          <article class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div><p class="testimonial-card__text">"We had severe water damage after a storm. They responded within hours, contained the damage, and completed the full repair in under a week."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar" aria-hidden="true">DT</div><div><div class="testimonial-card__name">Diana T.</div><div class="testimonial-card__location">Bay Ridge, Brooklyn</div></div></div></article>
+          <article class="testimonial-card"><div class="testimonial-card__stars" aria-label="5 star rating">★★★★★</div><p class="testimonial-card__text">"Got three estimates for our roof replacement. Brooklyn Pro was the most detailed and competitive. The crew was professional and on-time."</p><div class="testimonial-card__author"><div class="testimonial-card__avatar" aria-hidden="true">JL</div><div><div class="testimonial-card__name">James L.</div><div class="testimonial-card__location">Williamsburg, Brooklyn</div></div></div></article>
         </div>
       </div>
     </section>
-
-    <!-- Service Areas -->
     <section class="section section--gray" id="service-areas" aria-labelledby="areas-heading">
       <div class="container">
         <div class="text-center">
@@ -476,15 +201,13 @@
           <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Cobble Hill</span></div>
           <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Prospect Heights</span></div>
           <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Coney Island</span></div>
-          <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Flatlands</span></div>
           <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Borough Park</span></div>
+          <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Flatlands</span></div>
           <div class="area-card" role="listitem"><span class="area-card__pin" aria-hidden="true">📍</span><span class="area-card__name">Canarsie</span></div>
         </div>
       </div>
     </section>
-
-    <!-- CTA Strip -->
-    <div class="cta-strip" role="complementary" aria-label="Call to action">
+    <div class="cta-strip" role="complementary">
       <div class="container">
         <div class="cta-strip__inner">
           <h2 class="cta-strip__title">Ready to Start Your Brooklyn Project? Get a Free Estimate Today.</h2>
@@ -496,95 +219,21 @@
       </div>
     </div>
   </main>
-
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
         <div>
-          <a href="index.html" class="navbar__logo" aria-label="Brooklyn Pro Contractors">
-            <div class="navbar__logo-icon" aria-hidden="true">🏗️</div>
-            Brooklyn <span>Pro</span> Contractors
-          </a>
-          <p class="footer__brand-desc">Brooklyn's trusted construction and repair specialists since 2005. We build stronger communities one project at a time.</p>
-          <div class="footer__social" aria-label="Social media links">
-            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
-            <a href="#" class="footer__social-link" aria-label="Yelp">y</a>
-          </div>
+          <a href="index.html" class="navbar__logo"><div class="navbar__logo-icon" aria-hidden="true">🏗️</div>Brooklyn <span>Pro</span> Contractors</a>
+          <p class="footer__brand-desc">Brooklyn's trusted construction and repair specialists since 2005.</p>
         </div>
-
-        <div>
-          <h3 class="footer__col-title">Services</h3>
-          <ul class="footer__links">
-            <li><a href="services.html#masonry" class="footer__link">Masonry &amp; Brickwork</a></li>
-            <li><a href="services.html#foundation" class="footer__link">Foundation Repair</a></li>
-            <li><a href="services.html#roofing" class="footer__link">Roofing &amp; Waterproofing</a></li>
-            <li><a href="services.html#renovation" class="footer__link">Interior Renovation</a></li>
-            <li><a href="services.html#concrete" class="footer__link">Concrete Work</a></li>
-            <li><a href="services.html#emergency" class="footer__link">Emergency Repair</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer__col-title">Company</h3>
-          <ul class="footer__links">
-            <li><a href="about.html" class="footer__link">About Us</a></li>
-            <li><a href="about.html#team" class="footer__link">Our Team</a></li>
-            <li><a href="index.html#reviews" class="footer__link">Reviews</a></li>
-            <li><a href="index.html#service-areas" class="footer__link">Service Areas</a></li>
-            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 class="footer__col-title">Contact</h3>
-          <ul class="footer__contact-items">
-            <li class="footer__contact-item">
-              <span class="footer__contact-icon" aria-hidden="true">📞</span>
-              <div>
-                <strong>Phone</strong>
-                <a href="tel:+17185550192">(718) 555-0192</a>
-              </div>
-            </li>
-            <li class="footer__contact-item">
-              <span class="footer__contact-icon" aria-hidden="true">✉️</span>
-              <div>
-                <strong>Email</strong>
-                <a href="mailto:info@brooklynprocontractors.com">info@brooklynprocontractors.com</a>
-              </div>
-            </li>
-            <li class="footer__contact-item">
-              <span class="footer__contact-icon" aria-hidden="true">📍</span>
-              <div>
-                <strong>Address</strong>
-                1420 Atlantic Ave<br>Brooklyn, NY 11216
-              </div>
-            </li>
-            <li class="footer__contact-item">
-              <span class="footer__contact-icon" aria-hidden="true">🕐</span>
-              <div>
-                <strong>Hours</strong>
-                Mon–Fri: 7am–6pm<br>Sat: 8am–4pm
-              </div>
-            </li>
-          </ul>
-        </div>
+        <div><h3 class="footer__col-title">Services</h3><ul class="footer__links"><li><a href="services.html#masonry" class="footer__link">Masonry &amp; Brickwork</a></li><li><a href="services.html#foundation" class="footer__link">Foundation Repair</a></li><li><a href="services.html#roofing" class="footer__link">Roofing &amp; Waterproofing</a></li><li><a href="services.html#renovation" class="footer__link">Interior Renovation</a></li><li><a href="services.html#concrete" class="footer__link">Concrete Work</a></li><li><a href="services.html#emergency" class="footer__link">Emergency Repair</a></li></ul></div>
+        <div><h3 class="footer__col-title">Company</h3><ul class="footer__links"><li><a href="about.html" class="footer__link">About Us</a></li><li><a href="index.html#reviews" class="footer__link">Reviews</a></li><li><a href="contact.html" class="footer__link">Contact</a></li></ul></div>
+        <div><h3 class="footer__col-title">Contact</h3><ul class="footer__contact-items"><li class="footer__contact-item"><span class="footer__contact-icon" aria-hidden="true">📞</span><div><strong>Phone</strong><a href="tel:+17185550192">(718) 555-0192</a></div></li><li class="footer__contact-item"><span class="footer__contact-icon" aria-hidden="true">📍</span><div><strong>Address</strong>1420 Atlantic Ave, Brooklyn, NY 11216</div></li></ul></div>
       </div>
-
-      <div class="footer__bottom">
-        <p>&copy; 2025 Brooklyn Pro Contractors. All rights reserved. | NYC License #1234567</p>
-        <nav class="footer__bottom-links" aria-label="Legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Sitemap</a>
-        </nav>
-      </div>
+      <div class="footer__bottom"><p>&copy; 2025 Brooklyn Pro Contractors. All rights reserved. | NYC License #1234567</p></div>
     </div>
   </footer>
-
-  <button id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
-
+  <button id="back-to-top" aria-label="Back to top">↑</button>
   <script src="js/main.js"></script>
 </body>
 </html>
