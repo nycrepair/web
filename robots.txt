@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://www.brooklynprocontractors.com/sitemap.xml
 
-# Disallow common non-content paths
 Disallow: /cgi-bin/
 Disallow: /tmp/
